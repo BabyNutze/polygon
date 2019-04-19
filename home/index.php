@@ -41,7 +41,9 @@
 			<!-- /top navigation -->
 
 			<!-- page content -->
-			<?php include("home.php");?>
+			<?php 
+			if(isset())
+			include("home.php");?>
 			<!-- /page content -->
 
 			<!-- footer content -->
