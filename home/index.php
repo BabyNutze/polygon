@@ -25,31 +25,45 @@
 	<link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
 	<link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/css?family=Kanit|Kodchasan" rel="stylesheet">
+
 	<!-- Custom Theme Style -->
 	<link href="../build/css/custom.min.css" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Kanit', sans-serif;
+			font-family: 'Kodchasan', sans-serif;
+		}
+	</style>
 </head>
 
 <body class="nav-md">
 	<div class="container body">
 		<div class="main_container">
 			<div class="col-md-3 left_col">
-				<?php include("leftsidebar.php");?>
+				<?php include("inc/leftsidebar.php");?>
 			</div>
 
 			<!-- top navigation -->
-			<?php include("topnav.php");?>
+			<?php include("inc/topnav.php");?>
 			<!-- /top navigation -->
 
 			<!-- page content -->
 			<?php 
-			if(isset())
-			include("home.php");?>
+			if(!isset($_GET["job"])){
+				include("job/home.php");
+			}
+			if(isset($_GET["job"])){
+				$job = $_GET["job"];
+				
+			}
+			?>
 			<!-- /page content -->
 
 			<!-- footer content -->
 			<footer>
 				<div class="pull-right">
-					Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+					<a href="https://sixtthailand.com/admintool.php">sixt</a>
 				</div>
 				<div class="clearfix"></div>
 			</footer>
@@ -57,12 +71,7 @@
 		</div>
 	</div>
 
-	<div id="custom_notifications" class="custom-notifications dsp_none">
-		<ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
-		</ul>
-		<div class="clearfix"></div>
-		<div id="notif-group" class="tabbed_notifications"></div>
-	</div>
+
 
 	<!-- jQuery -->
 	<script src="../vendors/jquery/dist/jquery.min.js" type="23ff86389b59444d58cae709-text/javascript"></script>
