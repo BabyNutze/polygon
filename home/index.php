@@ -20,11 +20,11 @@
 	<link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 	<!-- bootstrap-progressbar -->
 	<link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
-	<!-- PNotify -->
+	<!-- PNotify
 	<link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
 	<link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
 	<link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
-
+ -->
 	<link href="https://fonts.googleapis.com/css?family=Kanit|Kodchasan" rel="stylesheet">
 
 	<!-- Custom Theme Style -->
@@ -55,6 +55,7 @@
 			}
 			if(isset($_GET["job"])){
 				$job = $_GET["job"];
+		include("job/" . $job . ".php");
 				
 			}
 			?>
@@ -85,11 +86,11 @@
 	<script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js" type="23ff86389b59444d58cae709-text/javascript"></script>
 	<!-- iCheck -->
 	<script src="../vendors/iCheck/icheck.min.js" type="23ff86389b59444d58cae709-text/javascript"></script>
-	<!-- PNotify -->
+	<!-- PNotify 
 	<script src="../vendors/pnotify/dist/pnotify.js" type="23ff86389b59444d58cae709-text/javascript"></script>
 	<script src="../vendors/pnotify/dist/pnotify.buttons.js" type="23ff86389b59444d58cae709-text/javascript"></script>
 	<script src="../vendors/pnotify/dist/pnotify.nonblock.js" type="23ff86389b59444d58cae709-text/javascript"></script>
-
+-->
 	<!-- Custom Theme Scripts -->
 	<script src="../build/js/custom.min.js" type="23ff86389b59444d58cae709-text/javascript"></script>
 	<!-- Google Analytics -->
